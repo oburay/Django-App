@@ -9,9 +9,12 @@
      </head>
      <body>
          
-        <h2>We finally created our first page without copying !!!! awesome
-            
-        </h2>
+        <h2>We finally created our first page without copying !!!! awesome</h2>
+        <ul>
+            {% for post in object_list%}
+            <li>{{post}}</li>
+            {% endfor %}
+        </ul>
      </body>
 
      <footer>
